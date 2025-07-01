@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta content="noindex, nofollow" name="robots"/>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>患者情報</title>
+<link href="css/patient.css" rel="stylesheet"/>
+</meta>
+<script>
+  if (sessionStorage.getItem("authenticated") !== "true") {
+    location.replace("index.html");
+  }
+</script>
+</head>
+<body>
+<h1>患者情報</h1>
+<div class="patient-card">
+<div class="row">
+<span class="label">患者</span>
+<span class="value">1歳、女児</span>
+</div>
+<div class="row">
+<span class="label">現病歴</span>
+<span class="value">
+        2週間前より、咳嗽、喘鳴が出現、持続
+      </span>
+</div>
+<div class="row">
+<span class="label">検査内容</span>
+<span class="value">レントゲン、CT</span>
+</div>
+</div>
+<div class="next-button">
+<a href="viewer.html">▶ 検査画像へ</a>
+</div>
+</body>
+</html>
